@@ -1,0 +1,147 @@
+/*  MOODY  */
+/*  by kibigo!  */
+
+@moody_black: #101;
+@moody_dark: #212;
+@moody_blaze: #420;
+@moody_nice: #690069;
+@moody_8008: #800851;
+@moody_80085: rgba(128, 8, 81, .5);
+@moody_bob: #b0b;
+@moody_ded: #d3d;
+@moody_better: #be77e4;
+@moody_bae: #bae;
+@moody_baa: #baa;
+@moody_cab: #cab;
+@moody_fines: #f11735;
+@moody_pink: deeppink;
+@moody_dim_pink: mediumvioletred;
+
+.CodeMirror,
+.CodeMirror-scroll {
+	Background-Color: @moody_dark;
+	Color: @moody_baa;
+	Line-Height: 1.35;
+}
+
+.CodeMirror-activeline {
+	.CodeMirror-foldgutter-open::AFTER { Color: @moody_dark }
+	.CodeMirror-foldgutter-folded::AFTER { Color: @moody_black }
+}
+
+.CodeMirror .CodeMirror-selected { Background: @moody_blaze }
+
+.CodeMirror-cursor {
+	Margin: -1PX;
+	Border: 1PX Solid @moody_bae !important;
+	Background: @moody_80085;
+	Width: Auto;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+	.CodeMirror-gutter-elt {
+		Background: @moody_dim_pink;
+		Color: @moody_baa;
+	}
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background { Background: @moody_black }
+.CodeMirror-focused .CodeMirror-selected { Background: @moody_80085 }
+.CodeMirror-foldgutter-folded:AFTER { Color: @moody_bob }
+.CodeMirror-foldgutter-open:AFTER { Color: @moody_8008 }
+
+.CodeMirror-foldmarker {
+	Border: 2PX @moody_8008 Outset;
+	Border-Radius: 3PX;
+	Color: @moody_dark;
+	Background-Color: @moody_pink;
+}
+
+.CodeMirror-foldmarker::AFTER {
+	Display: Inline-Block;
+	Padding: .25EM 0 0;
+	Font-Size: .8EM;
+	Font-Weight: Bold;
+	Line-Height: 1;
+	Text-Shadow: 1PX 1PX 2PX @moody_nice;
+	Vertical-Align: Top;
+	Content: "[…]";
+}
+
+.CodeMirror-gutters {
+	Background-Color: @moody_black;
+	Border-Right: @moody_nice 1PX Dotted;
+}
+
+.CodeMirror-linenumber { Color: @moody_8008 }
+
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+	Background-Color: @moody_bob;
+	Color: @moody_bae !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+	Margin: 0;
+	Border: None !important;
+	Border-Bottom: 1PX Solid @moody_bae !important;
+	Background: Transparent;
+}
+
+.CodeMirror-searching {
+	Background-Color: @moody_nice;
+	Color: @moody_bae !important;
+
+	&.searching-current-match {
+		Background-Color: @moody_pink;
+		Color: @moody_black !important;
+	}
+}
+
+.image-view,
+.not-editor { background-color: @moody_black }
+.view-pane .image-view { color: @moody_black }
+
+.cm-dk-whitespace-leading-space,
+.cm-dk-whitespace-leading-tab { color: @moody_nice }
+.cm-dk-whitespace-space,
+.cm-dk-whitespace-tab { color: @moody_baa }
+.cm-dk-whitespace-trailing-space,
+.cm-dk-whitespace-trailing-tab { color: @moody_fines }
+
+.cm-dk-whitespace-leading-space::before,
+.cm-dk-whitespace-leading-tab::before,
+.cm-dk-whitespace-space::before,
+.cm-dk-whitespace-tab::before,
+.cm-dk-whitespace-trailing-space::before,
+.cm-dk-whitespace-trailing-tab::before {
+	color: inherit;
+	background-color: currentColor;
+}
+
+.cm-atom,
+.cm-string,
+.cm-string-2,
+.cm-hr { color: @moody_better }
+.cm-number,
+.cm-attribute { color: @moody_fines }
+.cm-def,
+.cm-property { color: @moody_dim_pink }
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3 { color: @moody_pink }
+.cm-operator,
+.cm-meta,
+.cm-bracket { color: @moody_cab }
+.cm-comment { color: @moody_8008 }
+.cm-minus { color: @moody_bob }
+.cm-plus  { color: @moody_bae }
+.cm-header { color: @moody_pink }
+.cm-link { color: @moody_bae; text-decoration: none }
+.cm-rangeinfo { color: @moody_bob }
+.cm-keyword,
+.cm-qualifier,
+.cm-builtin,
+.cm-tag,
+.cm-quote { color: @moody_bob }
+.cm-error { color: @moody_fines }
