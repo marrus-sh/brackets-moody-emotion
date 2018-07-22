@@ -22,6 +22,34 @@
 	Background-Color: @moody_dark;
 	Color: @moody_baa;
 	Line-Height: 1.35;
+
+	.inline-widget {
+		Border-Color: @moody_pink;
+		Background-Color: @moody_black;
+		Color: @moody_baa;
+
+		.button-bar a {
+			Border-Color: @moody_pink;
+			Color: @moody_cab;
+			Background-Color: @moody_black;
+			Box-Shadow: None;
+		}
+
+		.button-bar li.selected a {
+			Color: @moody_black;
+			Background-Color: @moody_pink;
+		}
+
+		.close { Color: @moody_pink }
+
+		input {
+			Border-Color: @moody_pink;
+			Color: @moody_baa;
+			Background-Color: @moody_black;
+		}
+
+		ul.swatches .value { Color: @moody_cab }
+	}
 }
 
 .CodeMirror-activeline {
@@ -88,7 +116,8 @@
 	Background: Transparent;
 }
 
-.CodeMirror-searching {
+.CodeMirror-searching,
+.cm-matchhighlight {
 	Background-Color: @moody_nice;
 	Color: @moody_bae !important;
 
@@ -100,6 +129,8 @@
 
 .image-view,
 .not-editor { background-color: @moody_black }
+.quick-view-highlight { background-color: @moody_80085 }
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background { box-shadow: None }
 .view-pane .image-view { color: @moody_black }
 
 .cm-dk-whitespace-leading-space,
